@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+select {
+  /* styling */
+  background-color: #0d089a;
+  display: inline-block;
+  font: inherit;
+  line-height: 1em;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  padding: 0.35em 1.7em 0.35em 0.8em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select {
+  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%);
+  background-position: calc(100% - 25px) calc(1em + 1px),
+    calc(100% - 20px) calc(1em + 1px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px;
+  background-repeat: no-repeat;
+}
+
+select {
+  /* styling */
+  background-color: #0d089a;
+  display: inline-block;
+  font: inherit;
+  line-height: 1em;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  padding: 0.35em 1.7em 0.35em 0.8em;
+}
+
+.wrapper {
+  display: inline-flex;
+  height: 85px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 15px;
+}
+.wrapper .option {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.option-1 {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.option-2 {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2 {
+  background: #0d089a;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot {
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span {
+  font-size: 20px;
+  color: #9ba3ae;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span {
+  color: #fff;
+}

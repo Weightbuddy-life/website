@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>WeightBuddy | BMR Calculator</title>
+  </head>
+  <body>
+    <div
+      class="
+        w-full
+        fixed
+        flex flex-row
+        justify-between
+        px-10
+        md:px-24
+        pt-7
+        pb-7
+        bg-dark_blue
+      "
+    >
+      <a href="index.html" class="h-10 w-72 bg-logo bg-no-repeat"></a>
+      <div class="hidden lg:flex flex-row justify-between">
+        <h1 class="mx-4 xl:mx-7 text-white text-xl xl:text-2xl font-light pt-1">
+          Calculators
+        </h1>
+        <h1 class="mx-4 xl:mx-7 text-white text-xl xl:text-2xl font-light pt-1">
+          Why Us
+        </h1>
+        <h1 class="mx-4 xl:mx-7 text-white text-xl xl:text-2xl font-light pt-1">
+          Methodology
+        </h1>
+        <h1 class="mx-4 xl:mx-7 text-white text-xl xl:text-2xl font-light pt-1">
+          Contact Us
+        </h1>
+      </div>
+      <i class="text-white lg:hidden fas fa-bars text-2xl mt-2"></i>
+    </div>
+    <div
+      class="
+        hidden
+        w-full
+        fixed
+        flex-col
+        justify-between
+        px-10
+        md:px-24
+        mt-24
+        pb-7
+        bg-dark_blue
+      "
+    >
+      <h1
+        class="
+          mx-4
+          xl:mx-7
+          text-white text-xl
+          xl:text-2xl
+          font-light
+          pt-1
+          text-center
+        "
+      >
+        Calculators
+      </h1>
+      <h1
+        class="
+          mx-4
+          xl:mx-7
+          text-white text-xl
+          xl:text-2xl
+          font-light
+          pt-1
+          text-center
+        "
+      >
+        Why Us
+      </h1>
+      <h1
+        class="
+          mx-4
+          xl:mx-7
+          text-white text-xl
+          xl:text-2xl
+          font-light
+          pt-1
+          text-center
+        "
+      >
+        Methodology
+      </h1>
+      <h1
+        class="
+          mx-4
+          xl:mx-7
+          text-white text-xl
+          xl:text-2xl
+          font-light
+          pt-1
+          text-center
+        "
+      >
+        Contact Us
+      </h1>
+    </div>
+    <h1
+      class="
+        float-right
+        w-full
+        pt-32
+        md:pt-40
+        lg:pt-44
+        text-center text-4xl
+        lg:text-6xl
+        px-12
+        sm:px-24
+        font-bold
+        leading-normal
+        text-dark_blue
+        md:text-left
+      "
+    >
+      BMR CALCULATOR
+    </h1>
+    <h1
+      class="
+        sm:px-24
+        md:text-left
+        float-right
+        w-full
+        pt-7
+        text-center text-3xl
+        lg:text-4xl
+        px-12
+        font-semibold
+        leading-relaxed
+        text-dark_blue
+      "
+    >
+      What is BMR and what is a BMR calculator?
+    </h1>
+    <h1
+      class="
+        sm:px-24
+        md:text-left
+        float-right
+        w-full
+        pt-7
+        text-center text-sm
+        lg:text-xl
+        px-12
+        font-light
+        leading-relaxed
+        text-dark_blue
+      "
+    >
+      BMR (Basal Metabolic Rate) measures the quantity of calories your body
+      burns at rest to sustain vital functions, such as breathing, heart rate,
+      and brain function.
+    </h1>
+    <h1
+      class="
+        sm:px-24
+        md:text-left
+        float-right
+        w-full
+        pt-16
+        text-center text-3xl
+        lg:text-4xl
+        px-12
+        font-semibold
+        leading-relaxed
+        text-dark_blue
+      "
+    >
+      How can using the BMR calculator help you lose weight?
+    </h1>
+    <h1
+      class="
+        sm:px-24
+        md:text-left
+        float-right
+        w-full
+        pt-7
+        text-center text-sm
+        lg:text-xl
+        px-12
+        font-light
+        leading-relaxed
+        text-dark_blue
+      "
+    >
+      Your BMR can be used to help you gain, lose, or maintain your weight. By
+      calculating how many calories you burn, you can know how many to consume.
+      Basically:
+      <br /><br />
+      Is your objective to maintain your weight? Consume the same number of
+      calories that you burn.
+      <br /><br />
+      Is your objective to gain weight? Consume more calories than you burn.
+      <br /><br />
+      Is your objective to lose weight? Consume fewer calories than you burn.
+      <br /><br />
+      There are different formulae to calculate this. We use the Mifflin St Jeor
+      formula to calculate your BMR as this is widely considered the most
+      accurate formula.
+    </h1>
+    <div class="flex flex-row float-right w-full lg:mr-0">
+      <div
+        class="
+          hidden
+          md:block
+          mt-14
+          float-right
+          w-full
+          h-96
+          lg:h-99
+          b
+          bg-calculator2_background
+          lg:bg-calculator2a_background
+          bg-contain bg-no-repeat bg-left bg-siz
+        "
+      >
+        <div class="wrapper w-72 pl-5 ml-8 lg:ml-20 mt-5 lg:mt-16 xl:mt-14">
+          <input type="radio" name="select2" id="option-1" checked />
+          <input type="radio" name="select2" id="option-2" />
+          <label
+            for="option-1"
+            class="
+              option option-1
+              border-t-4 border-b-4 border-l-4
+              border-electric_blue
+              font-medium
+            "
+          >
+            <span>Male</span>
+          </label>
+          <label
+            for="option-2"
+            class="
+              option option-2
+              border-t-4 border-b-4 border-r-4
+              border-electric_blue
+              font-medium
+            "
+          >
+            <span>Female</span>
+          </label>
+        </div>
+        <form>
+          <input
+            class="
+              text-2xl
+              w-48
+              mt-5
+              xl:mt-8
+              pl-5
+              ml-10
+              lg:ml-24
+              text-electric_blue
+              py-2
+              rounded-l-xl
+            "
+            type="text"
+            name="weight"
+            placeholder="Enter weight"
+          /><select
+            id="arrow"
+            class="text-2xl text-white"
+            name="unit"
+            id="unit"
+          >
+            <option value="volvo">kg</option>
+            <option value="saab">lb</option>
+            <option value="opel">st</option>
+          </select>
+        </form>
+        <form>
+          <input
+            class="
+              text-2xl
+              w-48
+              ml-10
+              mt-5
+              xl:mt-8
+              lg:ml-24
+              text-electric_blue
+              py-2
+              pl-5
+              rounded-l-xl
+            "
+            type="text"
+            name="weight"
+            placeholder="Enter height"
+          /><select
+            id="arrow"
+            class="text-2xl text-white"
+            name="unit"
+            id="unit"
+          >
+            <option value="volvo">cm</option>
+            <option value="saab">in</option>
+          </select>
+        </form>
+        <h1
+          class="
+            text-2xl
+            font-medium
+            text-white
+            bg-electric_blue
+            w-48
+            py-4
+            text-center
+            rounded-full
+            mt-10
+            ml-10
+            mr-32
+            lg:ml-24
+            xl:mt-12
+          "
+        >
+          Calculate!
+        </h1>
+      </div>
+      <div class="pt-20 lg:ml-24 lg:pr-24 xl:pr-38 xl:ml-40 hidden md:block">
+        <div class="flex flex-row w-96">
+          <h1
+            class="
+              text-center text-3xl
+              lg:text-4xl
+              font-semibold
+              leading-relaxed
+              text-dark_blue
+            "
+          >
+            Your BMR:
+          </h1>
+          <h1
+            class="
+              ml-8
+              bg-yellow-500
+              w-16
+              rounded-xl
+              h-10
+              pt-1
+              self-center
+              text-center text-2xl
+              font-medium
+              text-white
+            "
+          >
+            762
+          </h1>
+          <h1
+            class="
+              ml-3
+              self-center
+              text-center text-2xl
+              font-light
+              leading-relaxed
+              text-dark_blue
+            "
+          >
+            kcal/day
+          </h1>
+        </div>
+        <img src="images/BMR_bar.png" class="h-7 lg:h-10 mt-7" />
+        <div class="flex flex-row ml-3 mt-5">
+          <span class="h-6 w-6 rounded-full bg-yellow-300 self-center"></span>
+          <h1 class="text-2xl pl-5 self-center">
+            <strong>Low</strong> - less than 18.5
+          </h1>
+        </div>
+        <div class="flex flex-row ml-3 mt-2.5">
+          <span class="h-6 w-6 rounded-full bg-green-400 self-center"></span>
+          <h1 class="text-2xl pl-5 self-center">
+            <strong>Medium</strong> - 18.5 - 30
+          </h1>
+        </div>
+        <div class="flex flex-row ml-3 mt-2.5">
+          <span class="h-6 w-6 rounded-full bg-yellow-500 self-center"></span>
+          <h1 class="text-2xl pl-5 self-center">
+            <strong>High</strong> - 25 - 30
+          </h1>
+        </div>
+        <div class="flex flex-row ml-3 mt-2.5">
+          <span class="h-6 w-6 rounded-full bg-red-400 self-center"></span>
+          <h1 class="text-2xl pl-5 self-center">
+            <strong>Very high</strong> - greater than 30
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="float-right w-full md:hidden">
+      <div
+        class="
+          bg-light_blue
+          mt-16
+          mb-8
+          py-9
+          w-80
+          mx-auto
+          rounded-xl
+          text-center
+        "
+      >
+        <div class="wrapper m-auto w-4/5">
+          <input type="radio" name="select" id="option-1" checked />
+          <input type="radio" name="select" id="option-2" />
+          <label
+            for="option-1"
+            class="
+              option option-1
+              border-t-4 border-b-4 border-l-4
+              border-electric_blue
+              font-medium
+            "
+          >
+            <span>Male</span>
+          </label>
+          <label
+            for="option-2"
+            class="
+              option option-2
+              border-t-4 border-b-4 border-r-4
+              border-electric_blue
+              font-medium
+            "
+          >
+            <span>Female</span>
+          </label>
+        </div>
+        <form class="text-center">
+          <input
+            class="text-xl w-40 text-electric_blue py-2 rounded-l-xl pl-5"
+            type="text"
+            name="weight"
+            placeholder="Enter weight"
+          /><select id="arrow" class="text-xl text-white" name="unit" id="unit">
+            <option value="volvo">kg</option>
+            <option value="saab">lb</option>
+            <option value="opel">st</option>
+          </select>
+        </form>
+        <form class="text-center">
+          <input
+            class="text-xl w-40 mt-5 text-electric_blue py-2 pl-5 rounded-l-xl"
+            type="text"
+            name="weight"
+            placeholder="Enter height"
+          /><select id="arrow" class="text-xl text-white" name="unit" id="unit">
+            <option value="volvo">cm</option>
+            <option value="saab">in</option>
+          </select>
+        </form>
+        <h1
+          class="
+            text-xl
+            font-medium
+            text-white
+            bg-electric_blue
+            w-40
+            py-3
+            text-center
+            rounded-full
+            mt-8
+            mx-auto
+          "
+        >
+          Calculate!
+        </h1>
+        <hr
+          class="my-10 w-24 mx-auto h-1 border-none rounded-full bg-light_grey"
+        />
+        <div class="flex flex-row justify-center">
+          <h1
+            class="
+              text-center text-2xl
+              lg:text-4xl
+              font-medium
+              leading-relaxed
+              text-dark_blue
+            "
+          >
+            Your BMR:
+          </h1>
+          <h1
+            class="
+              ml-3
+              mr-1.5
+              bg-yellow-500
+              w-14
+              rounded-xl
+              h-9
+              pt-1
+              self-center
+              text-center text-xl
+              font-medium
+              text-white
+            "
+          >
+            762
+          </h1>
+          <h1
+            class="
+              self-center
+              text-center text-xl
+              lg:text-4xl
+              font-light
+              leading-relaxed
+              text-dark_blue
+            "
+          >
+            kcal/day
+          </h1>
+        </div>
+        <img src="images/BMR_bar_mobile.png" class="h-10 mx-auto mt-5" />
+        <div class="flex flex-row mt-5 ml-10">
+          <span class="h-5 w-5 rounded-full bg-yellow-300 self-center"></span>
+          <h1 class="text-md pl-3 self-center">
+            <strong>Low</strong> - less than 18.5
+          </h1>
+        </div>
+        <div class="flex flex-row mt-2.5 ml-10">
+          <span class="h-5 w-5 rounded-full bg-green-400 self-center"></span>
+          <h1 class="text-md pl-3 self-center">
+            <strong>Medium</strong> - 18.5 - 30
+          </h1>
+        </div>
+        <div class="flex flex-row mt-2.5 ml-10">
+          <span class="h-5 w-5 rounded-full bg-yellow-500 self-center"></span>
+          <h1 class="text-md pl-3 self-center">
+            <strong>High</strong> - 25 - 30
+          </h1>
+        </div>
+        <div class="flex flex-row mt-2.5 ml-10">
+          <span class="h-5 w-5 rounded-full bg-red-400 self-center"></span>
+          <h1 class="text-md pl-3 self-center">
+            <strong>Very high</strong> - greater than 30
+          </h1>
+        </div>
+      </div>
+    </div>
+    <h1
+      class="
+        sm:px-24
+        md:text-left
+        float-right
+        w-full
+        md:pt-7
+        text-center text-sm
+        lg:text-xl
+        px-12
+        font-light
+        leading-relaxed
+        text-dark_blue
+      "
+    >
+      After you do this, you can calculate your total daily energy expenditure
+      including exercise by clicking <strong class="font-bold">here</strong> to
+      go to the TDEE Calculator.
+    </h1>
+    <div class="md:hidden">
+      <h1
+        class="
+          float-right
+          w-full
+          pt-20
+          text-center text-4xl
+          px-12
+          font-bold
+          leading-normal
+          text-dark_blue
+          uppercase
+        "
+      >
+        Contact Us
+      </h1>
+      <h1 class="text-center text-sm font-bold pt-6 float-right w-full">
+        Terms & Conditions
+      </h1>
+      <h1 class="text-center text-sm font-bold pt-3 float-right w-full">
+        Privacy Policy
+      </h1>
+      <h1 class="text-center text-sm font-normal pt-6 float-right w-full px-16">
+        Copyright © WeightBuddy 2021. All Rights Reserved.
+      </h1>
+      <div class="float-right w-full flex flex-row pt-8 pb-12 justify-center">
+        <div
+          class="
+            relative
+            h-12
+            w-12
+            bg-dark_blue
+            rounded-full
+            content-center
+            mx-2
+          "
+        >
+          <i
+            class="
+              fas
+              fa-envelope
+              text-2xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-white
+            "
+          ></i>
+        </div>
+        <div
+          class="
+            relative
+            h-12
+            w-12
+            bg-dark_blue
+            rounded-full
+            content-center
+            mx-2
+          "
+        >
+          <i
+            class="
+              fab
+              fa-facebook
+              text-2xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-white
+            "
+          ></i>
+        </div>
+        <div
+          class="
+            relative
+            h-12
+            w-12
+            bg-dark_blue
+            rounded-full
+            content-center
+            mx-2
+          "
+        >
+          <i
+            class="
+              fab
+              fa-twitter
+              text-2xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-white
+            "
+          ></i>
+        </div>
+        <div
+          class="
+            relative
+            h-12
+            w-12
+            bg-dark_blue
+            rounded-full
+            content-center
+            mx-2
+          "
+        >
+          <i
+            class="
+              fab
+              fa-instagram
+              text-2xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-white
+            "
+          ></i>
+        </div>
+      </div>
+    </div>
+    <div
+      class="
+        hidden
+        md:block
+        mt-16
+        bg-contact bg-contain bg-no-repeat bg-center
+        float-right
+        w-full
+        h-99
+      "
+    >
+      <h1
+        class="
+          float-right
+          w-full
+          pt-36
+          text-center text-5xl
+          px-12
+          font-bold
+          leading-normal
+          text-white
+          uppercase
+        "
+      >
+        Contact Us
+      </h1>
+      <div
+        class="flex flex-row text-center float-right w-full justify-center pt-8"
+      >
+        <h1 class="text-center text-lg font-semibold px-5 text-white">
+          Terms & Conditions
+        </h1>
+        <h1 class="text-center text-lg font-semibold px-5 text-white">
+          Privacy Policy
+        </h1>
+      </div>
+
+      <h1
+        class="
+          text-center text-white text-lg
+          font-normal
+          pt-6
+          float-right
+          w-full
+          px-16
+        "
+      >
+        Copyright © WeightBuddy 2021. All Rights Reserved.
+      </h1>
+      <div class="float-right w-full flex flex-row pt-12 justify-center">
+        <div
+          class="relative h-16 w-16 bg-white rounded-full content-center mx-4"
+        >
+          <i
+            class="
+              fas
+              fa-envelope
+              text-4xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-dark_blue
+            "
+          ></i>
+        </div>
+        <div
+          class="relative h-16 w-16 bg-white rounded-full content-center mx-4"
+        >
+          <i
+            class="
+              fab
+              fa-facebook
+              text-4xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-dark_blue
+            "
+          ></i>
+        </div>
+        <div
+          class="relative h-16 w-16 bg-white rounded-full content-center mx-4"
+        >
+          <i
+            class="
+              fab
+              fa-twitter
+              text-4xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-dark_blue
+            "
+          ></i>
+        </div>
+        <div
+          class="relative h-16 w-16 bg-white rounded-full content-center mx-4"
+        >
+          <i
+            class="
+              fab
+              fa-instagram
+              text-4xl
+              absolute
+              self-center
+              top-1/4
+              left-1/4
+              text-dark_blue
+            "
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!--[if IE 6]>
+
+
+                                            /%%(
+                             ,((,         *%%%%%#*
+                           %%%&%&#,      *#%&#&%#(
+                          /&&&&&&%&/     (%%&%%(#(
+                          #%%&&&%&&%/    %%#/,,,,/
+                          #&&%&&%&%%%   ,(*/##(#/*.
+                          #&&&%@&@&&%, ./((%%%%#%%*
+                          #%%@&@&&&&%* /(#&%&%&%&%/
+                          (&%&%&%&@&&# (%%%&%&&&%%/
+                          /#((/((%&%&#/%%&%&%&&&%%/
+                          **/(%%(#(#%%#&&%@&&&#&#%
+                          ,(%%%&%&%#%%#&&%@#&&&&%/
+                 ,(/%(%(  /##&#&%&&%%%%&&@&&&%&##,
+                 #%&%&%&#/(%%%&&&&&%%%&@&&%&&%&#/,
+                 *&&%&&&&(#%%%&&%&&%%%#&@&&&%&##**
+                  %&@%&%&#(#&#&&%&&%&##&@&&&&&#(*(
+                   %%@&@&%##&#&%&&&%&#%&&&@&&%#*,
+                   *&%&&@&##&%&&&&&%%&&@&&&&&#%//*
+                  (&%&&@@@%#%%&%&%&&&%&@@@&&&&%(&%&&#/
+               *#%&%@@@@@@&%&&&&&&&&&&@@@@&&&%&&&&&%%%/
+               ,%@@@@@@@@@@@@&&&@&@@@@@@@@@@@@&@@&@&@@,
+               #((/@@@@@@@@@@@@@@@@@@@@@@@@@&@%&&&@%*/*
+              *#%&&(////%&@@@@@@@@@@@@@@@@@@%&/(////#%(
+              /#&&#&&&&&&%#(((((((#&%(##%&#%%%#&&####%#/
+              ((&##&&&@&&@&&&&&&&&&&&&&&&&&&&&&&%%#####(
+              /(((#&@@@@@@@@@@@@@@@&&@@@@@@&@@&&@%###(##
+              *//(#&&@@@@@@@&@@@@@@@@@@@@@@@@@@@@%##%(/(.
+              **/((#&@@@@@@@@@@@@@@@@@@@@@@@&&&@@@##(((/,
+              **(((&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%##((/
+              */((#@&@@@&@@@@@@@@@@@@@@@@@&&@&&@@%###(/*
+               */(%&@@&&&&&@@@@@@@@@@@@@@@@@@@&&@@%##/*
+                *((#&@&@@@&@@@@@@@@@@@@@@&&@@@@@@%#((/
+                  /#%@@@@@@@@@@@@@@@@@@@@@@@@@%%%#(*
+                    *#%&@@@@@@@@@@@@@@@@@@@@@%%%(
+                        ,%%%&@@@@@@@@@@@@&%%/
+
+
+
+                          © COPYRIGHT 2021
+                      DESIGNED BY LOUIS CUTNER
+
+
+      <![endif]-->
+    <script src="index.js"></script>
+  </body>
+</html>
