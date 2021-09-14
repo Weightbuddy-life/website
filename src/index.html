@@ -17,6 +17,7 @@
         pt-7
         pb-7
         bg-dark_blue
+        z-10
       "
     >
       <a href="index.html" class="h-10 w-72 bg-logo bg-no-repeat"></a>
@@ -87,15 +88,135 @@
         Contact Us
       </h1>
     </div>
+    <div class="w-full float-right flex flex-col lg:flex-row">
+      <div class="lg:pl-24 lg:pr-8">
+        <h1
+          class="
+            pt-32
+            md:pt-36
+            mt-1
+            text-3xl
+            md:text-4xl
+            xl:text-5xl
+            font-extrabold
+            text-dark_blue
+            lg:text-left
+            text-center
+            px-12
+            lg:px-0 lg:leading-normal
+            xl:leading-normal
+            md:px-32
+            lg:pt-44
+          "
+        >
+          LOSE WEIGHT IN 2 WEEKS WITH WEIGHTBUDDY
+        </h1>
+        <h1
+          class="
+            sm:px-32
+            lg:text-left
+            w-full
+            pt-4
+            md:pt-6
+            text-center text-sm
+            lg:text-md
+            px-12
+            lg:px-0
+            font-light
+            leading-relaxed
+            text-dark_blue
+            lg:w-80 lg:pt-10
+          "
+        >
+          Ready to lose weight quickly for free?
+          <br /><br />
+          Weightbuddy is a free service dedicated to helping you lose weight
+          fast.
+        </h1>
+        <div
+          class="
+            mx-auto
+            flex flex-row
+            w-full
+            float-right
+            justify-center
+            lg:justify-start
+            pt-2.5
+            lg:pt-10
+          "
+        >
+          <form>
+            <input
+              class="
+                text-2xl
+                w-48
+                mt-5
+                pl-5
+                text-dark_blue
+                border-dark_blue
+                border-l-4 border-t-4 border-b-4
+                py-2
+                rounded-l-xl
+              "
+              type="text"
+              name="weight"
+              placeholder="Stay in touch"
+            />
+          </form>
+          <i
+            class="
+              fas
+              fa-envelope
+              text-7xl text-white
+              bg-dark_blue
+              mt-5
+              h-14
+              p-2
+              rounded-r-xl
+            "
+          ></i>
+        </div>
+      </div>
+      <div>
+        <img src="images/home_graphic_mobile.png" class="pt-5 sm:hidden" />
+        <img
+          src="images/home_graphic_web.png"
+          class="
+            pt-5
+            md:pt-8
+            hidden
+            sm:block
+            px-20
+            md:px-36
+            lg:pt-36 lg:pl-5 lg:pr-24
+          "
+        />
+        <div
+          id="arrow-bg"
+          class="bg-dark_blue rounded-full absolute lg:hidden"
+        ></div>
+        <i
+          id="arrow-icon"
+          class="
+            absolute
+            fas
+            fa-sort-down
+            text-5xl text-white
+            rounded-full
+            lg:hidden
+          "
+        ></i>
+      </div>
+    </div>
     <h1
       class="
+        hidden
+        lg:block
         float-right
         w-full
-        pt-32
-        md:pt-40
-        lg:pt-44
+        pt-16
         text-center text-3xl
-        lg:text-6xl
+        lg:pt-24 lg:text-5xl
         px-12
         sm:px-24
         font-bold
@@ -108,12 +229,15 @@
     </h1>
     <h1
       class="
+        hidden
+        lg:block
+        text-left
         sm:px-24
         md:text-left
         float-right
         w-full
         pt-7
-        text-center text-sm
+        text-sm
         lg:text-xl
         px-12
         font-light
@@ -124,252 +248,294 @@
       Choose out of the fast weight loss calculators below to start your weight
       loss journey!
     </h1>
-    <div class="flex flex-row float-right w-full lg:mr-0 mt-10">
+    <div class="flex flex-row float-right w-full lg:mr-0">
       <div
         class="
           hidden
-          md:block
+          lg:block
           float-right
           w-full
-          h-99.5
-          bg-calculator3_background
-          bg-contain bg-no-repeat bg-left bg-siz
+          h-96
+          mt-16
+          bg-calculator_background
+          bg-contain bg-no-repeat bg-left
         "
       >
-        <div class="wrapper w-72 pl-5 ml-8 mt-16 lg:ml-20">
-          <input type="radio" name="select2" id="option-1" checked />
-          <input type="radio" name="select2" id="option-2" />
-          <label
-            for="option-1"
+        <div class="mt-16 py-5 rounded-xl text-center flex flex-row px-24">
+          <h1
             class="
-              option option-1
-              border-t-4 border-b-4 border-l-4
-              border-electric_blue
-              font-medium
+              bg-electric_blue
+              p-2
+              self-center
+              text-white
+              rounded-lg
+              w-16
+              sm:w-20
+              font-bold
+              text-xl
             "
           >
-            <span>Male</span>
-          </label>
-          <label
-            for="option-2"
+            BMI
+          </h1>
+          <h1
             class="
-              option option-2
-              border-t-4 border-b-4 border-r-4
-              border-electric_blue
-              font-medium
+              text-xl
+              mx-7
+              sm:w-20
+              bg-white
+              p-2
+              self-center
+              text-electric_blue
+              rounded-lg
+              w-20
+              font-bold
             "
           >
-            <span>Female</span>
-          </label>
+            BMR
+          </h1>
+          <h1
+            class="
+              text-xl
+              sm:w-20
+              bg-white
+              p-2
+              self-center
+              text-electric_blue
+              rounded-lg
+              w-20
+              font-bold
+            "
+          >
+            TDEE
+          </h1>
         </div>
-        <form>
-          <input
-            class="
-              text-2xl
-              w-48
-              mt-5
-              pl-5
-              ml-10
-              lg:ml-24
-              text-electric_blue
-              py-2
-              rounded-l-xl
-            "
-            type="text"
-            name="weight"
-            placeholder="Enter weight"
-          /><select
-            id="arrow"
-            class="text-2xl text-white"
-            name="unit"
-            id="unit"
-          >
-            <option value="volvo">kg</option>
-            <option value="saab">lb</option>
-            <option value="opel">st</option>
-          </select>
-        </form>
-        <form>
-          <input
-            class="
-              text-2xl
-              w-48
-              ml-10
-              mt-5
-              lg:ml-24
-              text-electric_blue
-              py-2
-              pl-5
-              rounded-l-xl
-            "
-            type="text"
-            name="weight"
-            placeholder="Enter height"
-          /><select
-            id="arrow"
-            class="text-2xl text-white"
-            name="unit"
-            id="unit"
-          >
-            <option value="volvo">cm</option>
-            <option value="saab">in</option>
-          </select>
-        </form>
-        <form>
-          <input
-            class="
-              text-2xl
-              w-48
-              ml-10
-              mt-5
-              lg:ml-24
-              text-electric_blue
-              py-2
-              pl-5
-              rounded-l-xl
-            "
-            type="text"
-            name="weight"
-            placeholder="Enter height"
-          /><select
-            id="arrow"
-            class="text-2xl text-white"
-            name="unit"
-            id="unit"
-          >
-            <option value="volvo">cm</option>
-            <option value="saab">in</option>
-          </select>
-        </form>
-        <form>
-          <input
-            class="
-              text-2xl
-              w-48
-              ml-10
-              mt-5
-              lg:ml-24
-              text-electric_blue
-              py-2
-              pl-5
-              rounded-l-xl
-            "
-            type="text"
-            name="weight"
-            placeholder="Enter height"
-          /><select
-            id="arrow"
-            class="text-2xl text-white"
-            name="unit"
-            id="unit"
-          >
-            <option value="volvo">cm</option>
-            <option value="saab">in</option>
-          </select>
-        </form>
-
         <h1
           class="
-            text-2xl
-            font-medium
-            text-white
-            bg-electric_blue
-            w-48
-            py-3
-            text-center
-            rounded-full
-            mt-10
-            ml-10
-            mr-32
-            lg:ml-24
+            mt-3
+            sm:px-24
+            md:text-left
+            w-99
+            text-center text-sm
+            lg:text-xl
+            px-12
+            font-light
+            leading-relaxed
+            text-dark_blue
           "
         >
-          Calculate!
+          FREE BMI (Body Mass Index) calculator
         </h1>
-      </div>
-      <div class="pt-20 lg:ml-24 lg:pr-24 xl:pr-38 xl:ml-40 hidden md:block">
-        <div class="flex flex-row w-96">
-          <h1
+        <div class="w-full float-right mt-14 mb-3 px-24">
+          <a
+            href="BMI.html"
             class="
-              text-center text-3xl
-              lg:text-4xl
-              font-semibold
-              leading-relaxed
-              text-dark_blue
-            "
-          >
-            Your TDEE:
-          </h1>
-          <h1
-            class="
-              ml-8
-              bg-indigo-500
-              w-16
-              rounded-xl
-              h-10
-              pt-1
-              self-center
-              text-center text-2xl
+              text-xl
               font-medium
               text-white
-            "
-          >
-            762
-          </h1>
-          <h1
-            class="
-              ml-3
-              self-center
+              bg-electric_blue
+              py-3.5
+              px-10
               text-center
-              lg:text-2xl
-              font-light
-              leading-relaxed
-              text-dark_blue
+              rounded-full
             "
           >
-            kcal/day
+            Calculate!
+          </a>
+        </div>
+      </div>
+      <img
+        src="images/BMI_example_web.png"
+        class="h-72 ml-5 mt-24 hidden lg:block xl:pr-24"
+      />
+    </div>
+    <h1
+      class="
+        hidden
+        lg:block
+        float-right
+        w-full
+        pt-16
+        text-center text-3xl
+        lg:pt-24 lg:text-5xl
+        px-12
+        sm:px-24
+        font-bold
+        leading-normal
+        text-dark_blue
+        md:text-left
+      "
+    >
+      WHY US?
+    </h1>
+    <div
+      class="
+        hidden
+        lg:block
+        float-right
+        w-full
+        h-99
+        mt-16
+        bg-about_background
+        bg-contain bg-no-repeat bg-left
+      "
+    >
+      <div class="flex flex-col ml-24">
+        <div class="flex flex-row mt-28 pt-1">
+          <div class="self-center relative w-10 h-10">
+            <i
+              class="
+                fas
+                fa-adjust
+                absolute
+                text-center
+                top-2.5
+                text-xl
+                z-10
+                left-2.5
+                text-white
+              "
+            ></i>
+            <div
+              class="
+                w-10
+                h-10
+                bg-electric_blue
+                rounded-full
+                absolute
+                text-center
+              "
+            ></div>
+          </div>
+
+          <h1 class="ml-8 text-left self-center text-xl">
+            The service is FREE – No signup needed!
           </h1>
         </div>
-        <img src="images/TDEE_bar.png" class="h-7 lg:h-10 mt-7" />
-        <div class="flex flex-row mt-5 ml-3">
-          <span class="h-6 w-6 rounded-full bg-pink-500 self-center"></span>
-          <h1 class="text-xl pl-5 self-center">
-            <strong>Sedentary</strong> - less than 18.5
+        <div class="flex flex-row mt-5">
+          <div class="self-center relative w-10 h-10">
+            <i
+              class="
+                fas
+                fa-adjust
+                absolute
+                text-center
+                top-2.5
+                z-10
+                left-2.5
+                text-white text-xl
+              "
+            ></i>
+            <div
+              class="
+                w-10
+                h-10
+                bg-electric_blue
+                rounded-full
+                absolute
+                text-center
+              "
+            ></div>
+          </div>
+
+          <h1 class="ml-8 text-left self-center text-xl">
+            It is simple for you to use at home
           </h1>
         </div>
-        <div class="flex flex-row mt-4 ml-3">
-          <span class="h-6 w-6 rounded-full bg-purple-500 self-center"></span>
-          <h1 class="text-xl pl-5 self-center">
-            <strong>Light exercise</strong> - 18.5 - 30
+        <div class="flex flex-row mt-5">
+          <div class="self-center relative w-10 h-10">
+            <i
+              class="
+                fas
+                fa-adjust
+                absolute
+                text-center
+                top-2.5
+                z-10
+                left-2.5
+                text-white text-xl
+              "
+            ></i>
+            <div
+              class="
+                w-10
+                h-10
+                bg-electric_blue
+                rounded-full
+                absolute
+                text-center
+              "
+            ></div>
+          </div>
+
+          <h1 class="ml-10 text-left self-center text-xl">
+            The programme is scientifically proven to help you lose weight
+            quickly
           </h1>
         </div>
-        <div class="flex flex-row mt-4 ml-3">
-          <span class="h-6 w-6 rounded-full bg-indigo-500 self-center"></span>
-          <h1 class="text-xl pl-5 self-center">
-            <strong>Moderate exercise</strong> - 25 - 30
+        <div class="flex flex-row mt-5">
+          <div class="self-center relative w-10 h-10">
+            <i
+              class="
+                text-xl
+                fas
+                fa-adjust
+                absolute
+                text-center
+                top-2.5
+                z-10
+                left-2.5
+                text-white
+              "
+            ></i>
+            <div
+              class="
+                w-10
+                h-10
+                bg-electric_blue
+                rounded-full
+                absolute
+                text-center
+              "
+            ></div>
+          </div>
+
+          <h1 class="ml-8 text-left self-center text-xl">
+            Gives you the tools to lose weight at your own pace
           </h1>
         </div>
-        <div class="flex flex-row mt-4 ml-3">
-          <span class="h-6 w-6 rounded-full bg-blue-500 self-center"></span>
-          <h1 class="text-xl pl-5 self-center">
-            <strong>Heavy exercise</strong> - greater than 30
-          </h1>
-        </div>
-        <div class="flex flex-row mt-4 ml-3">
-          <span class="h-6 w-6 rounded-full bg-green-300 self-center"></span>
-          <h1 class="text-xl pl-5 self-center">
-            <strong>Extreme exercise</strong> - greater than 30
-          </h1>
-        </div>
-        <div class="flex flex-row mt-4 ml-3">
-          <span class="h-6 w-6 rounded-full bg-green-500 self-center"></span>
-          <h1 class="text-xl pl-5 self-center">
-            <strong>Athlete</strong> - greater than 30
+        <div class="flex flex-row mt-5">
+          <div class="self-center relative w-10 h-10">
+            <i
+              class="
+                fas
+                fa-adjust
+                absolute
+                text-center
+                top-2.5
+                z-10
+                left-2.5
+                text-white text-xl
+              "
+            ></i>
+            <div
+              class="
+                w-10
+                h-10
+                bg-electric_blue
+                rounded-full
+                absolute
+                text-center
+              "
+            ></div>
+          </div>
+
+          <h1 class="ml-8 text-left self-center text-xl">
+            We can help you lose 4 kg weight in 2 weeks.
           </h1>
         </div>
       </div>
     </div>
-    <div class="float-right w-full md:hidden">
+    <div class="float-right w-full lg:hidden">
       <div
         class="
           bg-light_blue
@@ -377,179 +543,333 @@
           mb-8
           py-9
           w-80
+          sm:w-99
           mx-auto
           rounded-xl
           text-center
         "
       >
-        <div class="wrapper m-auto w-4/5">
-          <input type="radio" name="select" id="option-1" checked />
-          <input type="radio" name="select" id="option-2" />
-          <label
-            for="option-1"
-            class="
-              option option-1
-              border-t-4 border-b-4 border-l-4
-              border-electric_blue
-              font-medium
-            "
-          >
-            <span>Male</span>
-          </label>
-          <label
-            for="option-2"
-            class="
-              option option-2
-              border-t-4 border-b-4 border-r-4
-              border-electric_blue
-              font-medium
-            "
-          >
-            <span>Female</span>
-          </label>
-        </div>
-        <form class="text-center">
-          <input
-            class="text-xl w-40 text-electric_blue py-2 rounded-l-xl pl-5"
-            type="text"
-            name="weight"
-            placeholder="Enter age"
-          /><select id="arrow" class="text-xl text-white" name="unit" id="unit">
-            <option value="volvo">years</option>
-          </select>
-        </form>
-        <form class="text-center">
-          <input
-            class="text-xl w-40 mt-5 text-electric_blue py-2 pl-5 rounded-l-xl"
-            type="text"
-            name="weight"
-            placeholder="Enter weight"
-          /><select id="arrow" class="text-xl text-white" name="unit" id="unit">
-            <option value="volvo">kg</option>
-            <option value="saab">lb</option>
-          </select>
-        </form>
-        <form class="text-center">
-          <input
-            class="text-xl w-40 mt-5 text-electric_blue py-2 pl-5 rounded-l-xl"
-            type="text"
-            name="weight"
-            placeholder="Enter height"
-          /><select id="arrow" class="text-xl text-white" name="unit" id="unit">
-            <option value="volvo">cm</option>
-            <option value="saab">in</option>
-          </select>
-        </form>
-        <form class="text-center">
-          <input
-            class="text-xl w-40 mt-5 text-electric_blue py-2 pl-5 rounded-l-xl"
-            type="text"
-            name="weight"
-            placeholder="Activity level"
-          /><select id="arrow" class="text-xl text-white" name="unit" id="unit">
-            <option value="volvo">low</option>
-            <option value="saab">med</option>
-            <option value="saab">high</option>
-          </select>
-        </form>
-
         <h1
           class="
-            text-xl
-            font-medium
-            text-white
-            bg-electric_blue
-            w-40
-            py-3
-            text-center
-            rounded-full
-            mt-8
-            mx-auto
+            float-right
+            w-full
+            text-center text-3xl
+            lg:pt-24 lg:text-5xl
+            px-12
+            sm:px-24
+            font-bold
+            leading-normal
+            text-dark_blue
+            md:text-left
           "
         >
-          Calculate!
+          CALCULATE HOW TO LOSE WEIGHT
         </h1>
-        <hr
-          class="my-10 w-24 mx-auto h-1 border-none rounded-full bg-light_grey"
-        />
-        <div class="flex flex-row justify-center">
+        <h1
+          class="
+            sm:px-24
+            md:text-left
+            float-right
+            w-full
+            py-7
+            text-center text-sm
+            lg:text-xl
+            px-12
+            font-light
+            leading-relaxed
+            text-dark_blue
+          "
+        >
+          Choose out of the fast weight loss calculators below to start your
+          weight loss journey!
+        </h1>
+        <div
+          class="
+            flex flex-row
+            w-full
+            float-right
+            justify-evenly
+            px-3
+            sm:px-10
+            pt-4
+          "
+        >
           <h1
             class="
-              text-center text-2xl
-              lg:text-4xl
-              font-medium
-              leading-relaxed
-              text-dark_blue
+              bg-electric_blue
+              p-2
+              self-center
+              text-white
+              rounded-lg
+              w-16
+              sm:w-20
+              font-bold
             "
           >
-            Your TDEE:
+            BMI
           </h1>
           <h1
             class="
-              ml-3
-              mr-1.5
-              bg-indigo-500
-              w-14
-              rounded-xl
-              h-9
-              pt-1
+              sm:w-20
+              bg-white
+              p-2
               self-center
-              text-center text-xl
+              text-electric_blue
+              rounded-lg
+              w-20
+              font-bold
+            "
+          >
+            BMR
+          </h1>
+          <h1
+            class="
+              sm:w-20
+              bg-white
+              p-2
+              self-center
+              text-electric_blue
+              rounded-lg
+              w-20
+              font-bold
+            "
+          >
+            TDEE
+          </h1>
+        </div>
+        <h1
+          class="
+            sm:px-24
+            md:text-left
+            float-right
+            w-full
+            py-7
+            text-center text-sm
+            lg:text-xl
+            px-12
+            font-light
+            leading-relaxed
+            text-dark_blue
+          "
+        >
+          FREE BMI (Body Mass Index) calculator
+        </h1>
+        <div class="w-full float-right mt-5 mb-3">
+          <a
+            href="BMI.html"
+            class="
+              text-xl
               font-medium
               text-white
+              bg-electric_blue
+              py-3.5
+              px-10
+              text-center
+              rounded-full
             "
           >
-            762
-          </h1>
-          <h1
+            Calculate!
+          </a>
+        </div>
+        <div class="w-full float-right">
+          <hr
             class="
-              self-center
-              text-center text-xl
-              lg:text-4xl
-              font-light
-              leading-relaxed
-              text-dark_blue
+              my-10
+              w-24
+              mx-auto
+              text-center
+              h-1
+              border-none
+              rounded-full
+              bg-light_grey
             "
-          >
-            kcal/day
-          </h1>
+          />
         </div>
-        <img src="images/TDEE_bar_mobile.png" class="h-10 mx-auto mt-5" />
-        <div class="flex flex-row mt-5 ml-7">
-          <span class="h-5 w-5 rounded-full bg-pink-500 self-center"></span>
-          <h1 class="text-sm pl-3 self-center">
-            <strong>Sedentary</strong> - less than 18.5
-          </h1>
-        </div>
-        <div class="flex flex-row mt-2.5 ml-7">
-          <span class="h-5 w-5 rounded-full bg-purple-500 self-center"></span>
-          <h1 class="text-sm pl-3 self-center">
-            <strong>Light exercise</strong> - 18.5 - 30
-          </h1>
-        </div>
-        <div class="flex flex-row mt-2.5 ml-7">
-          <span class="h-5 w-5 rounded-full bg-indigo-500 self-center"></span>
-          <h1 class="text-sm pl-3 self-center">
-            <strong>Moderate exercise</strong> - 25 - 30
-          </h1>
-        </div>
-        <div class="flex flex-row mt-2.5 ml-7">
-          <span class="h-5 w-5 rounded-full bg-blue-500 self-center"></span>
-          <h1 class="text-sm pl-3 self-center">
-            <strong>Heavy exercise</strong> - greater than 30
-          </h1>
-        </div>
-        <div class="flex flex-row mt-2.5 ml-7">
-          <span class="h-5 w-5 rounded-full bg-green-300 self-center"></span>
-          <h1 class="text-sm pl-3 self-center">
-            <strong>Extreme exercise</strong> - greater than 30
-          </h1>
-        </div>
-        <div class="flex flex-row mt-2.5 ml-7">
-          <span class="h-5 w-5 rounded-full bg-green-500 self-center"></span>
-          <h1 class="text-sm pl-3 self-center">
-            <strong>Athlete</strong> - greater than 30
-          </h1>
+        <img src="images/BMI_example.png" class="px-5 sm:px-10" />
+      </div>
+    </div>
+    <div class="float-right w-full lg:hidden">
+      <div
+        class="
+          bg-light_blue
+          mt-7
+          mb-8
+          py-9
+          w-80
+          sm:w-99
+          mx-auto
+          rounded-xl
+          text-center
+        "
+      >
+        <h1
+          class="
+            text-center text-3xl
+            lg:pt-24 lg:text-5xl
+            px-12
+            sm:px-24
+            font-bold
+            leading-normal
+            text-dark_blue
+            md:text-left
+          "
+        >
+          WHY US?
+        </h1>
+        <div class="px-12">
+          <div class="flex flex-col">
+            <div class="flex flex-row mt-5">
+              <div class="self-center relative w-8 h-8">
+                <i
+                  class="
+                    fas
+                    fa-adjust
+                    absolute
+                    text-center
+                    top-2
+                    z-10
+                    left-2
+                    text-white
+                  "
+                ></i>
+                <div
+                  class="
+                    w-8
+                    h-8
+                    bg-electric_blue
+                    rounded-full
+                    absolute
+                    text-center
+                  "
+                ></div>
+              </div>
+
+              <h1 class="ml-8 text-left self-center">
+                The service is FREE – No signup needed!
+              </h1>
+            </div>
+            <div class="flex flex-row mt-5">
+              <div class="self-center relative w-8 h-8">
+                <i
+                  class="
+                    fas
+                    fa-adjust
+                    absolute
+                    text-center
+                    top-2
+                    z-10
+                    left-2
+                    text-white
+                  "
+                ></i>
+                <div
+                  class="
+                    w-8
+                    h-8
+                    bg-electric_blue
+                    rounded-full
+                    absolute
+                    text-center
+                  "
+                ></div>
+              </div>
+
+              <h1 class="ml-8 text-left self-center">
+                It is simple for you to use at home
+              </h1>
+            </div>
+            <div class="flex flex-row mt-5">
+              <div class="self-center relative w-8 h-8">
+                <i
+                  class="
+                    fas
+                    fa-adjust
+                    absolute
+                    text-center
+                    top-2
+                    z-10
+                    left-2
+                    text-white
+                  "
+                ></i>
+                <div
+                  class="
+                    w-8
+                    h-8
+                    bg-electric_blue
+                    rounded-full
+                    absolute
+                    text-center
+                  "
+                ></div>
+              </div>
+
+              <h1 class="ml-10 text-left self-center">
+                The programme is scientifically proven to help you lose weight
+                quickly
+              </h1>
+            </div>
+            <div class="flex flex-row mt-5">
+              <div class="self-center relative w-8 h-8">
+                <i
+                  class="
+                    fas
+                    fa-adjust
+                    absolute
+                    text-center
+                    top-2
+                    z-10
+                    left-2
+                    text-white
+                  "
+                ></i>
+                <div
+                  class="
+                    w-8
+                    h-8
+                    bg-electric_blue
+                    rounded-full
+                    absolute
+                    text-center
+                  "
+                ></div>
+              </div>
+
+              <h1 class="ml-8 text-left self-center">
+                Gives you the tools to lose weight at your own pace
+              </h1>
+            </div>
+            <div class="flex flex-row mt-5">
+              <div class="self-center relative w-8 h-8">
+                <i
+                  class="
+                    fas
+                    fa-adjust
+                    absolute
+                    text-center
+                    top-2
+                    z-10
+                    left-2
+                    text-white
+                  "
+                ></i>
+                <div
+                  class="
+                    w-8
+                    h-8
+                    bg-electric_blue
+                    rounded-full
+                    absolute
+                    text-center
+                  "
+                ></div>
+              </div>
+
+              <h1 class="ml-8 text-left self-center">
+                We can help you lose 4 kg weight in 2 weeks.
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>

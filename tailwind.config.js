@@ -22,6 +22,7 @@ module.exports = {
         calculator2a_background: "url('images/calculator2a_bg.png')",
         calculator3_background: "url('images/calculator3_bg.png')",
         calculator3a_background: "url('images/calculator3a_bg.png')",
+        about_background: "url('images/about_bg.png')",
       }),
       transitionProperty: {
         height: "max-height",
